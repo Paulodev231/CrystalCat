@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crystal Cat ($CCAT) — From Digital Innovation to Real-World Utility</title>
+<meta name="description" content="Crystal Cat ($CCAT) is a community-driven token on BNB Smart Chain bridging real-world real-estate utility and social impact through Crystal Care. Liquidity locked, ownership renounced, 10% burned." />
+<meta name="theme-color" content="#0a0f2c" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Crystal Cat ($CCAT) — From Nothing to Wealth" />
+<meta property="og:description" content="A dreamers' token bridging digital assets, real estate and healthcare charity. Liquidity locked · Ownership renounced · 10% burned." />
+<meta property="og:image" content="assets/crystal-cat-logo.jpg" />
+
+<link rel="icon" type="image/jpeg" href="assets/crystal-cat-emblem.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Animated background layers -->
+<div class="bg-aurora" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#hero" class="nav__brand" aria-label="Crystal Cat home">
+    <img src="assets/crystal-cat-emblem.jpg" alt="Crystal Cat logo" class="nav__logo" />
+    <span class="nav__name">Crystal&nbsp;Cat <em>$CCAT</em></span>
+  </a>
+  <nav class="nav__links" id="navLinks" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#utility">Utility</a>
+    <a href="#care">Crystal Care</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav__actions">
+    <a href="#buy" class="btn btn--primary btn--sm">Buy $CCAT</a>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__orbs" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <span class="pill reveal" data-reveal>
+        <span class="pill__dot"></span> Live on BNB Smart Chain · Dreamers Token
+      </span>
+      <h1 class="hero__title reveal" data-reveal>
+        From <span class="grad">Nothing</span> to <span class="grad grad--gold">Wealth</span>.
+      </h1>
+      <p class="hero__lede reveal" data-reveal>
+        Crystal Cat <strong>($CCAT)</strong> is a community-driven token bridging the
+        digital economy with <strong>real-world real estate</strong> and healthcare charity
+        through <strong>Crystal Care</strong>. Transparent by design — liquidity locked,
+        ownership renounced.
+      </p>
+      <div class="hero__cta reveal" data-reveal>
+        <a href="#buy" class="btn btn--primary btn--lg">
+          <span>Buy $CCAT Now</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="assets/Crystal_Cat_Whitepaper.pdf" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
+          Read Whitepaper
+        </a>
+      </div>
+
+      <!-- trust badges -->
+      <ul class="hero__badges reveal" data-reveal>
+        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Liquidity locked 2&nbsp;yrs</li>
+        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Ownership renounced</li>
+        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> 10% supply burned</li>
+      </ul>
+    </div>
+
+    <div class="hero__art reveal" data-reveal>
+      <div class="hero__cat">
+        <div class="hero__halo" aria-hidden="true"></div>
+        <img src="assets/crystal-cat-logo.jpg" alt="Crystal Cat mascot — a crystalline blue cat wearing gold sunglasses" />
+        <span class="sparkle sparkle--1" aria-hidden="true"></span>
+        <span class="sparkle sparkle--2" aria-hidden="true"></span>
+        <span class="sparkle sparkle--3" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live stat strip -->
+  <div class="stats reveal" data-reveal>
+    <div class="stat glass">
+      <span class="stat__num" data-count="100" data-suffix="M">0</span>
+      <span class="stat__label">Total Supply</span>
+    </div>
+    <div class="stat glass">
+      <span class="stat__num" data-count="150" data-prefix="" data-suffix="+">0</span>
+      <span class="stat__label">Holders</span>
+    </div>
+    <div class="stat glass">
+      <span class="stat__num" data-count="9" data-prefix="$" data-suffix="K+">0</span>
+      <span class="stat__label">ATH Market Cap</span>
+    </div>
+    <div class="stat glass">
+      <span class="stat__num" data-count="10" data-suffix="%">0</span>
+      <span class="stat__label">Tokens Burned</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTRACT / TRUST BAR ============ -->
+<section class="ca" aria-label="Contract address">
+  <div class="ca__box glass reveal" data-reveal>
+    <div class="ca__label">
+      <span class="ca__badge">Verified Contract</span>
+      Official $CCAT address · BNB Smart Chain
+    </div>
+    <div class="ca__row">
+      <code id="contractAddr">0x3E82Be7F376757A9EDa4d3F914Ed753Acf3FA460</code>
+      <button class="ca__copy" id="copyBtn" aria-label="Copy contract address">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M5 15V5a2 2 0 0 1 2-2h10" stroke="currentColor" stroke-width="1.7"/></svg>
+        <span>Copy</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section__head reveal" data-reveal>
+    <span class="eyebrow">The Vision</span>
+    <h2>A digital community building <span class="grad">real-world value</span></h2>
+    <p class="section__sub">Crystal Cat isn't a short-term pump. It's a long-term journey connecting digital assets, real estate, community and social impact.</p>
+  </div>
+
+  <div class="cards cards--2">
+    <article class="card glass reveal" data-reveal data-tilt>
+      <div class="card__icon">🔭</div>
+      <h3>Our Vision</h3>
+      <p>To bridge the gap between the traditional real-estate industry and the digital economy — exploring practical blockchain-enabled payment and utility opportunities, while using the ecosystem's growth to fund meaningful social impact.</p>
+    </article>
+    <article class="card glass reveal" data-reveal data-tilt>
+      <div class="card__icon">🎯</div>
+      <h3>Our Mission</h3>
+      <p>Build a strong community, develop credible partnerships, investigate real-world applications for $CCAT, and establish social-impact initiatives that create measurable benefits for people in need.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ TOKENOMICS ============ -->
+<section class="section" id="tokenomics">
+  <div class="section__head reveal" data-reveal>
+    <span class="eyebrow">Tokenomics</span>
+    <h2>Fair, transparent &amp; <span class="grad grad--gold">locked</span></h2>
+    <p class="section__sub">Every parameter is designed to protect holders and reward the community.</p>
+  </div>
+
+  <div class="tokenomics">
+    <div class="tokenomics__viz glass reveal" data-reveal>
+      <div class="donut" id="donut" role="img" aria-label="Token supply: 100 million total, 10% burned">
+        <div class="donut__center">
+          <span class="donut__num">100M</span>
+          <span class="donut__cap">Total Supply</span>
+        </div>
+      </div>
+      <ul class="legend">
+        <li><span class="legend__dot" style="--c:var(--cyan)"></span> Circulating &amp; Liquidity <b>90%</b></li>
+        <li><span class="legend__dot" style="--c:var(--gold)"></span> Burned Forever <b>10%</b></li>
+      </ul>
+    </div>
+
+    <div class="tokenomics__grid">
+      <div class="tk glass reveal" data-reveal><span class="tk__k">Total Supply</span><span class="tk__v">100,000,000</span></div>
+      <div class="tk glass reveal" data-reveal><span class="tk__k">Buy / Sell Tax</span><span class="tk__v">3% / 3%</span></div>
+      <div class="tk glass reveal" data-reveal><span class="tk__k">Max Wallet</span><span class="tk__v">4%</span></div>
+      <div class="tk glass reveal" data-reveal><span class="tk__k">Burn</span><span class="tk__v">10% of supply</span></div>
+      <div class="tk glass reveal" data-reveal><span class="tk__k">Liquidity</span><span class="tk__v">Locked · 2 years</span></div>
+      <div class="tk glass reveal" data-reveal><span class="tk__k">Ownership</span><span class="tk__v">Renounced</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UTILITY / REAL ESTATE ============ -->
+<section class="section" id="utility">
+  <div class="section__head reveal" data-reveal>
+    <span class="eyebrow">Real-World Utility</span>
+    <h2>Where crypto meets <span class="grad">real estate</span></h2>
+    <p class="section__sub">A central part of the long-term vision: exploring how $CCAT can interact with property, land and payments. These are proposed use cases the project is actively investigating.</p>
+  </div>
+
+  <div class="cards cards--3">
+    <article class="card glass reveal" data-reveal data-tilt><div class="card__icon">🏠</div><h3>Property Purchases</h3><p>Explore buying residential &amp; commercial properties with digital assets.</p></article>
+    <article class="card glass reveal" data-reveal data-tilt><div class="card__icon">🌍</div><h3>Land Acquisition</h3><p>Investigate acquiring land through blockchain-enabled transactions.</p></article>
+    <article class="card glass reveal" data-reveal data-tilt><div class="card__icon">🔑</div><h3>Paying Rent</h3><p>Rental-related applications connecting tenants and property owners.</p></article>
+    <article class="card glass reveal" data-reveal data-tilt><div class="card__icon">🏗️</div><h3>Development</h3><p>Support property development and construction financing.</p></article>
+    <article class="card glass reveal" data-reveal data-tilt><div class="card__icon">📜</div><h3>Mortgage Concepts</h3><p>Research mortgage-related use cases for digital-asset holders.</p></article>
+    <article class="card glass reveal" data-reveal data-tilt><div class="card__icon">🤝</div><h3>Connecting Parties</h3><p>Link buyers, developers, agencies and digital-asset users.</p></article>
+  </div>
+  <p class="fineprint reveal" data-reveal>These are proposed use cases, not claims of existing integrations. Any real-estate adoption would require suitable partners, legal structures and compliance with applicable laws.</p>
+</section>
+
+<!-- ============ CRYSTAL CARE ============ -->
+<section class="section care" id="care">
+  <div class="care__inner">
+    <div class="care__copy reveal" data-reveal>
+      <span class="eyebrow">Crystal Care</span>
+      <h2>Turning growth into <span class="grad grad--gold">real help</span></h2>
+      <p>Crystal Care is the health-focused social-impact arm of Crystal Cat. Its purpose is to help vulnerable people and families who struggle to afford essential healthcare — visiting hospitals, identifying genuine need, and providing assistance where resources and proper processes allow.</p>
+      <ul class="care__list">
+        <li>Helping patients who cannot afford hospital bills</li>
+        <li>Assisting with essential medicines &amp; supplies</li>
+        <li>Supporting people needing urgent treatment</li>
+        <li>Helping vulnerable families face healthcare challenges</li>
+        <li>Working with hospitals to verify legitimate needs</li>
+        <li>Transparent reporting &amp; governance</li>
+      </ul>
+    </div>
+    <div class="care__art reveal" data-reveal>
+      <div class="care__card glass">
+        <img src="assets/crystal-cat-emblem.jpg" alt="Crystal Cat emblem" />
+        <div class="care__heart">❤️</div>
+        <p>“A digital community can create utility while contributing positively to the real world.”</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROADMAP ============ -->
+<section class="section" id="roadmap">
+  <div class="section__head reveal" data-reveal>
+    <span class="eyebrow">Roadmap</span>
+    <h2>The journey <span class="grad">ahead</span></h2>
+    <p class="section__sub">A flexible development framework — timelines may evolve as the project grows.</p>
+  </div>
+
+  <div class="timeline">
+    <div class="tl reveal" data-reveal><span class="tl__phase">Phase 1</span><h3>Foundation</h3><p>Launch, community formation, branding, transparency, awareness and documentation.</p></div>
+    <div class="tl reveal" data-reveal><span class="tl__phase">Phase 2</span><h3>Growth</h3><p>Expand the community, strengthen communications, pursue collaborations and visibility.</p></div>
+    <div class="tl reveal" data-reveal><span class="tl__phase">Phase 3</span><h3>Utility Exploration</h3><p>Research practical $CCAT use cases across real estate and digital payments.</p></div>
+    <div class="tl reveal" data-reveal><span class="tl__phase">Phase 4</span><h3>Partnerships</h3><p>Engage real-estate firms, developers and agencies; evaluate formal integrations.</p></div>
+    <div class="tl reveal" data-reveal><span class="tl__phase">Phase 5</span><h3>Crystal Care</h3><p>Build the charity framework, verification, hospital outreach and impact reporting.</p></div>
+    <div class="tl reveal" data-reveal><span class="tl__phase">Phase 6</span><h3>Expansion</h3><p>Scale successful initiatives and explore international opportunities.</p></div>
+  </div>
+</section>
+
+<!-- ============ BUY / HOW TO ============ -->
+<section class="section buy" id="buy">
+  <div class="section__head reveal" data-reveal>
+    <span class="eyebrow">Get Started</span>
+    <h2>How to buy <span class="grad">$CCAT</span></h2>
+    <p class="section__sub">Four simple steps to join the Crystal Cat community on BNB Smart Chain.</p>
+  </div>
+
+  <div class="cards cards--4 buy__steps">
+    <article class="card glass reveal" data-reveal><span class="step__n">1</span><h3>Get a Wallet</h3><p>Install MetaMask or Trust Wallet and add the BNB Smart Chain network.</p></article>
+    <article class="card glass reveal" data-reveal><span class="step__n">2</span><h3>Fund with BNB</h3><p>Buy BNB from an exchange and send it to your wallet.</p></article>
+    <article class="card glass reveal" data-reveal><span class="step__n">3</span><h3>Connect to DEX</h3><p>Open PancakeSwap and paste the $CCAT contract address.</p></article>
+    <article class="card glass reveal" data-reveal><span class="step__n">4</span><h3>Swap &amp; Hold</h3><p>Swap BNB for $CCAT, confirm, and welcome to the family!</p></article>
+  </div>
+
+  <div class="buy__cta reveal" data-reveal>
+    <a href="https://pancakeswap.finance/swap?outputCurrency=0x3E82Be7F376757A9EDa4d3F914Ed753Acf3FA460" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Buy on PancakeSwap</a>
+    <a href="https://bscscan.com/token/0x3E82Be7F376757A9EDa4d3F914Ed753Acf3FA460" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">View on BscScan</a>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="section__head reveal" data-reveal>
+    <span class="eyebrow">FAQ</span>
+    <h2>Questions, <span class="grad">answered</span></h2>
+  </div>
+
+  <div class="faq">
+    <details class="faq__item glass reveal" data-reveal>
+      <summary>What is Crystal Cat ($CCAT)?<span class="faq__i"></span></summary>
+      <p>A community-driven token on BNB Smart Chain built around a long-term vision of real-world utility — particularly real estate — and social impact through the Crystal Care health initiative.</p>
+    </details>
+    <details class="faq__item glass reveal" data-reveal>
+      <summary>Is the project safe and transparent?<span class="faq__i"></span></summary>
+      <p>Liquidity is represented as locked for 2 years and ownership is renounced as a key transparency principle. Always verify on-chain status and official announcements independently before relying on them.</p>
+    </details>
+    <details class="faq__item glass reveal" data-reveal>
+      <summary>What are the taxes and limits?<span class="faq__i"></span></summary>
+      <p>3% buy tax, 3% sell tax, and a maximum wallet size of 4% of supply to discourage whales and protect the community.</p>
+    </details>
+    <details class="faq__item glass reveal" data-reveal>
+      <summary>Where can I buy it?<span class="faq__i"></span></summary>
+      <p>On PancakeSwap using the official contract address. See the “How to buy” section above for a step-by-step guide.</p>
+    </details>
+    <details class="faq__item glass reveal" data-reveal>
+      <summary>Are the real-estate and charity features live now?<span class="faq__i"></span></summary>
+      <p>No. Real-estate utility and Crystal Care are proposed, exploratory concepts. They will only be presented as confirmed after formal agreements and official announcements.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="section">
+  <div class="cta-banner glass reveal" data-reveal>
+    <div class="cta-banner__glow" aria-hidden="true"></div>
+    <h2>Ready to dream bigger?</h2>
+    <p>Join 150+ holders building from nothing to wealth.</p>
+    <div class="cta-banner__actions">
+      <a href="https://pancakeswap.finance/swap?outputCurrency=0x3E82Be7F376757A9EDa4d3F914Ed753Acf3FA460" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Buy $CCAT</a>
+      <a href="#TELEGRAM_PLACEHOLDER" class="btn btn--ghost btn--lg" data-social="telegram">Join Telegram</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="community">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <img src="assets/crystal-cat-emblem.jpg" alt="Crystal Cat" class="footer__logo" />
+      <div>
+        <strong>Crystal Cat <span class="grad">$CCAT</span></strong>
+        <p>From digital innovation to real-world utility.</p>
+      </div>
+    </div>
+    <div class="footer__social">
+      <a href="#X_PLACEHOLDER" data-social="x" aria-label="X (Twitter)" class="social">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.9 2H22l-7.3 8.4L23.3 22h-6.8l-5.3-6.9L5.1 22H2l7.8-9L1.4 2h6.9l4.8 6.4L18.9 2zm-2.4 18h1.9L7.6 4H5.6l10.9 16z"/></svg>
+      </a>
+      <a href="#TELEGRAM_PLACEHOLDER" data-social="telegram" aria-label="Telegram" class="social">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21.9 4.3l-3.3 15.6c-.2 1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6 13.4l-4.9-1.5c-1-.3-1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
+      </a>
+      <a href="assets/Crystal_Cat_Whitepaper.pdf" target="_blank" rel="noopener" aria-label="Whitepaper" class="social">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.6"/><path d="M14 3v5h5" stroke="currentColor" stroke-width="1.6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <nav class="footer__links" aria-label="Footer">
+    <a href="#about">About</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#utility">Utility</a>
+    <a href="#care">Crystal Care</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <div class="footer__contract">
+    <span>Contract:</span> <code>0x3E82Be7F376757A9EDa4d3F914Ed753Acf3FA460</code>
+  </div>
+
+  <p class="footer__disclaimer">
+    <strong>Disclaimer:</strong> This website and the Crystal Cat whitepaper describe a current vision and proposed direction. Nothing here is financial, investment, legal, tax or medical advice, nor a guarantee of price, profit, adoption or future performance. References to real-estate payments, partnerships or charitable support describe proposed or exploratory concepts unless formally announced. Participation in digital-asset markets carries risk, including possible total loss of capital. Always do your own research.
+  </p>
+  <p class="footer__copy">© 2026 Crystal Cat. All rights reserved.</p>
+</footer>
+
+<!-- Copy toast -->
+<div class="toast" id="toast" role="status" aria-live="polite">Contract address copied ✓</div>
+
+<script src="script.js"></script>
+</body>
+</html>
