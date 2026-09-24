@@ -110,18 +110,16 @@ Crystal Care (charity) → Roadmap → How to Buy → FAQ → CTA banner → Foo
 - **Liquidity:** locked 2 years · **Ownership:** renounced
 - **Contract:** `0x3E82Be7F376757A9EDa4d3F914Ed753Acf3FA460`
 
-## ⚠️ Placeholders you must replace before going live
+## Links (all wired up)
 
-Search the code for `PLACEHOLDER` and swap in real URLs:
+| What | URL |
+|------|-----|
+| Buy | PancakeSwap swap, prefilled with the contract |
+| Explorer | BscScan token page |
+| X / Twitter | https://x.com/crystal_cat_bsc |
+| Telegram | https://t.me/ccattoken |
 
-| What | Where | Current value |
-|------|-------|---------------|
-| Telegram | `index.html` (`data-social="telegram"`) | `#TELEGRAM_PLACEHOLDER` |
-| X / Twitter | `index.html` (`data-social="x"`) | `#X_PLACEHOLDER` |
-
-The **Buy on PancakeSwap** and **View on BscScan** links are already wired to the
-official contract address. Verify the PancakeSwap swap URL resolves correctly for your pair
-before promoting it.
+Verify the PancakeSwap swap URL resolves correctly for your pair before promoting it.
 
 ## Disclaimer
 
